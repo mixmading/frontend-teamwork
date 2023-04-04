@@ -18,7 +18,6 @@ function App() {
           <Route path="AllCars" element={<AllCars/>}/>
           <Route path="AllElectricCars" element={<AllElectricCars/>}/>
         </Routes>
-      <NavBar/>
 
     </div>
   );

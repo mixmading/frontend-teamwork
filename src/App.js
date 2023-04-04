@@ -17,7 +17,6 @@ function App() {
           <Route path="ElecricCars" element={<ElectricCars/>}/>
           <Route path="AllCars" element={<AllCars/>}/>
           <Route path="AllElectricCars" element={<AllElectricCars/>}/>
-
         </Routes>
       <NavBar/>
 

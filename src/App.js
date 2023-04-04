@@ -10,8 +10,7 @@ import { NavBar } from './components/NavBar';
 function App() {
   return (
     <div className="App">
-      <p> näkyykö saatana </p>
-      <NavBar/>
+      <NavBar>
         <Routes>
           <Route path="/Home" element={<Home/>}/>
           <Route path="/Cars" element={<Cars/>}/>
@@ -19,7 +18,7 @@ function App() {
           <Route path="/AllCars" element={<AllCars/>}/>
           <Route path="/AllElectricCars" element={<AllElectricCars/>}/>
         </Routes>
-
+      </NavBar>
     </div>
   );
 }

@@ -13,11 +13,11 @@ function App() {
       <p> näkyykö saatana </p>
       <NavBar/>
         <Routes>
-          <Route path="Home" element={<Home/>}/>
-          <Route path="Cars" element={<Cars/>}/>
-          <Route path="ElecricCars" element={<ElectricCars/>}/>
-          <Route path="AllCars" element={<AllCars/>}/>
-          <Route path="AllElectricCars" element={<AllElectricCars/>}/>
+          <Route path="/Home" element={<Home/>}/>
+          <Route path="/Cars" element={<Cars/>}/>
+          <Route path="/ElectricCars" element={<ElectricCars/>}/>
+          <Route path="/AllCars" element={<AllCars/>}/>
+          <Route path="/AllElectricCars" element={<AllElectricCars/>}/>
         </Routes>
 
     </div>

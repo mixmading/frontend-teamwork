@@ -10,6 +10,7 @@ import { NavBar } from './components/NavBar';
 function App() {
   return (
     <div className="App">
+      <p> näkyykö saatana </p>
       <NavBar/>
         <Routes>
           <Route path="Home" element={<Home/>}/>

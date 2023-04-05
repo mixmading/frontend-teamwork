@@ -9,8 +9,8 @@ export const FuelingList = () => {
       <h3>Fueling History</h3>
       <ul className="list">
         {transactions.map(transaction => (
-          <li key={transaction.id}>
-          Cars name: {transaction.text} | €: {transaction.Euro} | Litre: {transaction.Litre} | Charged: {transaction.kWh}
+          <li key={transaction.transaction}>
+          Cars name: {transaction.text} | €: {transaction.Euro} | Litre: {transaction.Litre} | Charged: {transaction.kWh} | Drived: {transaction.km}
           </li>
         ))}
       </ul>

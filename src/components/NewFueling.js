@@ -6,6 +6,7 @@ export const NewFueling = () => {
     const [Euro, setEuro] =useState('');
     const [Litre, setLitre] =useState('');
     const [kWh, setkWh] =useState('');
+    const [km, setkm]  =useState('');
 
     const { addTransaction } = useContext(GlobalContext);
 
@@ -17,7 +18,8 @@ export const NewFueling = () => {
         text,
         Euro: +Euro,
         Litre: +Litre,
-        kWh: +kWh
+        kWh: +kWh,
+        km: +km
       }
 
       addTransaction(newTransaction);
@@ -50,6 +52,11 @@ export const NewFueling = () => {
         placeholder="Enter chaging amount in kWh ..." />
       </div>
 
+      <div className="form-control">
+        <label htmlFor="amount-km">Amount drived</label>
+        <input type="number" value={km} onChange={(e) => setkm(e.target.value)}
+        placeholder="Enter km amount drived between fueling..." />
+      </div>
       <button className="btn">Add fueling</button>
     </form>
     </>

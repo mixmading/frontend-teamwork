@@ -1,19 +1,24 @@
+import React from 'react';
 import './App.css';
 import Tabs from './Tabs';
 import { Header } from './components/Header';
 import { FuelingList } from './components/FuelingList';
+import { NewFueling } from './components/NewFueling';
+
+import { GlobalProvider } from './context/GlobalState';
 
 function App() {
   
   return (
-    <div>
+    <GlobalProvider>
+      <Header />
       <div className='Container'>
-      <Header></Header>
-      <Tabs />
+      <NewFueling />
       <FuelingList />
-      
+      <Tabs />
+
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 

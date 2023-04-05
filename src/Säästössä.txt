@@ -1,0 +1,21 @@
+Otettu: App.js
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Cars } from './components/Cars';
+import { Home } from './components/Home';
+import { ElectricCars } from './components/ElectricCars';
+import { AllCars } from './components/AllCars';
+import { AllElectricCars } from './components/AllElectricCars';
+import { NavBar } from './components/NavBar';
+
+<NavBar>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/Home" element={<Home/>}/>
+            <Route path="/Cars" element={<Cars/>}/>
+            <Route path="/ElectricCars" element={<ElectricCars/>}/>
+            <Route path="/AllCars" element={<AllCars/>}/>
+            <Route path="/AllElectricCars" element={<AllElectricCars/>}/>
+          </Routes>
+        </BrowserRouter>
+      </NavBar>

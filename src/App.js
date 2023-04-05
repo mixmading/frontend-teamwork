@@ -14,8 +14,9 @@ function App() {
       <Header />
       <div className='Container'>
       <NewFueling />
-      <FuelingList />
       <Tabs />
+      <FuelingList />
+      
 
       </div>
     </GlobalProvider>

@@ -1,26 +1,56 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
+import { GlobalContext } from '../context/GlobalState';
 
 export const NewFueling = () => {
     const [text, setText] =useState('');
-    const [amount, setAmount] =useState(0);
+    const [Euro, setEuro] =useState('');
+    const [Litre, setLitre] =useState('');
+    const [kWh, setkWh] =useState('');
 
+    const { addTransaction } = useContext(GlobalContext);
+
+    const onSubmit = e => {
+      e.preventDefault();
+
+      const newTransaction = {
+        id: Math.floor(Math.random() * 100000000),
+        text,
+        Euro: +Euro,
+        Litre: +Litre,
+        kWh: +kWh
+      }
+
+      addTransaction(newTransaction);
+    }
   return (
     <>
-    <h3>Add new transaction</h3>
-    <form>
+    <h3>Add new fueling</h3>
+    <form onSubmit={onSubmit}>
       <div className="form-control">
-        <label htmlFor="text">Text</label>
+        <label htmlFor="text">Car name</label>
         <input type="text" value={text} onChange={(e) => setText(e.target.value)} 
-        placeholder="Enter text..." />
+        placeholder="Enter car name..." />
       </div>
+
       <div className="form-control">
-        <label htmlFor="amount"
-          >Amount <br />
-          (negative - expense, positive - income)</label
-        >
-        <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
+        <label htmlFor="amount-euro">Amount €</label>
+        <input type="number" value={Euro} onChange={(e) => setEuro(e.target.value)}
+        placeholder="Enter fueling price in €..." />
       </div>
-      <button className="btn">Add transaction</button>
+    
+      <div className="form-control">
+        <label htmlFor="amount-litre">Amount litre</label>
+        <input type="number" value={Litre} onChange={(e) => setLitre(e.target.value)}
+        placeholder="Enter amount of filled litres..." />
+      </div>
+
+      <div className="form-control">
+        <label htmlFor="amount-kWh">Amount charged</label>
+        <input type="number" value={kWh} onChange={(e) => setkWh(e.target.value)}
+        placeholder="Enter chaging amount in kWh ..." />
+      </div>
+
+      <button className="btn">Add fueling</button>
     </form>
     </>
     )

@@ -69,9 +69,13 @@ function Tabs() {
         >
           <h2>Electric Cars</h2>
           <hr />
-          <p>
-            Kakkea
-          </p>
+          <ul className="list">
+            {transactions.map(transaction => (
+              <li key={transaction.transaction}>
+                Car's name: {transaction.text} | €: {transaction.Euro} | kW-hours: {transaction.kWh} | Driven: {transaction.km}
+              </li>
+            ))}
+          </ul>
         </div>
         <div
           className={toggleState === 4 ? "content  active-content" : "content"}

@@ -39,7 +39,7 @@ function Tabs() {
         </button>
       </div>
 
-      <div className="content-tabs">
+      <div className="content-tabs" style={{ overflowX: "auto" }}>
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >

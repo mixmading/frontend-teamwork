@@ -58,19 +58,6 @@ h4 {
   border-right: 1px solid #ffffff;
 }
 
-.money {
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin: 5px 0;
-}
-
-.money.plus {
-  color: #2ecc71;
-}
-
-.money.minus {
-  color: #c0392b;
-}
 
 label {
   display: inline-block;
@@ -122,13 +109,6 @@ input[type='number'] {
   margin: 10px 0;
 }
 
-.list li.plus {
-  border-right: 5px solid #2ecc71;
-}
-
-.list li.minus {
-  border-right: 5px solid #c0392b;
-}
 
 .delete-btn {
   cursor: pointer;
@@ -186,6 +166,7 @@ body {
   box-sizing: content-box;
   position: relative;
   outline: none;
+
 }
 .tabs:not(:last-child){
   border-right: 1px solid rgba(17, 20, 175, 0.274);
@@ -238,3 +219,4 @@ button {
 .active-content {
   display: block;
 }
+

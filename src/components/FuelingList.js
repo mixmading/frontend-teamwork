@@ -6,7 +6,7 @@ export const FuelingList = () => {
 
   return (
     <>
-      <h3>Fueling History</h3>
+      <h3>Transaction History</h3>
       <ul className="list">
         {transactions.map(transaction => (
           <li key={transaction.transaction}>

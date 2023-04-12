@@ -1,8 +1,10 @@
-import { useState } from "react";
-import "./App.css";
+import React, { useState, useContext } from "react";
+
+import { GlobalContext } from '../context/GlobalState';
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
+  const { transactions } = useContext(GlobalContext);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -43,18 +45,22 @@ function Tabs() {
         >
           <h2>Cars</h2>
           <hr />
-          <p>
-            Persettä
-          </p>
+          <ul className="list">
+            {transactions.map(transaction => (
+              <li key={transaction.transaction}>
+                Car's name: {transaction.text} | €: {transaction.Euro} | Litres: {transaction.Litre} | Driven: {transaction.km}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
-          <h2>All Cars</h2>
+          <h2>Cars</h2>
           <hr />
           <p>
-            Paskea
+            Kakkea
           </p>
         </div>
 

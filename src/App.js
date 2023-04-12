@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Tabs from './Tabs';
+import  Tabs  from './components/Tabs';
 import { Header } from './components/Header';
 import { FuelingList } from './components/FuelingList';
 import { NewFueling } from './components/NewFueling';

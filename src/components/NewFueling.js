@@ -23,6 +23,12 @@ export const NewFueling = () => {
       }
 
       addTransaction(newTransaction);
+      // Clear input fields
+      setText('');
+      setEuro('');
+      setLitre('');
+      setkWh('');
+      setkm('');
     }
   return (
     <>

@@ -28,6 +28,15 @@ export const NewFueling = () => {
     <>
     <h3>Add New Fueling</h3>
     <form onSubmit={onSubmit}>
+
+      <div className="form-control">
+        <label htmlFor="text">Car type</label><br />
+        <input type="radio" id="petrol" name="car_type" value="Petrol" checked />
+        <label htmlFor="petrol" style={{marginRight: '20px'}}>Petrol</label>
+        <input type="radio" id="electric" name="car_type" value="Electric" />
+        <label htmlFor="electric">Electric</label>
+      </div>
+
       <div className="form-control">
         <label htmlFor="text">Car name</label>
         <input type="text" value={text} onChange={(e) => setText(e.target.value)} 

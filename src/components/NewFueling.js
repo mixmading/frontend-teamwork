@@ -7,6 +7,7 @@ export const NewFueling = () => {
   const [Litre, setLitre] = useState('');
   const [kWh, setkWh] = useState('');
   const [km, setkm] = useState('');
+  const [carType, setCarType] = useState('petrol');
 
   const { addTransaction } = useContext(GlobalContext);
 
@@ -19,7 +20,8 @@ export const NewFueling = () => {
       Euro: +Euro.substring(0, 4),
       Litre: +Litre.substring(0, 4),
       kWh: +kWh.substring(0, 4),
-      km: +km.substring(0, 4)
+      km: +km.substring(0, 4),
+      type_id: carType
     }
 
     addTransaction(newTransaction);
@@ -38,9 +40,9 @@ export const NewFueling = () => {
 
         <div className="form-control">
           <label htmlFor="text">Car type</label><br />
-          <input type="radio" type_id="petrol" name="car_type" value="Petrol" checked />
+          <input type="radio" name="car_type" value="petrol" checked={carType === 'petrol'} onChange={(e) => setCarType(e.target.value)} />
           <label htmlFor="petrol" style={{ marginRight: '20px' }}>Petrol</label>
-          <input type="radio" type_id="electric" name="car_type" value="Electric" />
+          <input type="radio" name="car_type" value="electric" checked={carType === 'electric'} onChange={(e) => setCarType(e.target.value)} />
           <label htmlFor="electric">Electric</label>
         </div>
 

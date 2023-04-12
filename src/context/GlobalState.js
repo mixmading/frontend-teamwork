@@ -4,12 +4,12 @@ import AppReducer from './AppReducer';
 //initial state
 const initialState = {
   transactions: [
-    { id: 1, text: 'Minnas car', Euro: 200, Litre: 150, kWh: 0, km: 450, type_id: 'petrol' },
-    { id: 2, text: 'Raijas car', Euro: 150, Litre: 100, kWh: 0, km: 300, type_id: 'petrol' },
-    { id: 3, text: 'Tapios car', Euro: 250, Litre: 300, kWh: 0, km: 450, type_id: 'petrol' },
-    { id: 4, text: 'Kalles car', Euro: 150, Litre: 200, kWh: 0, km: 600, type_id: 'petrol' },
-    { id: 5, text: 'Jennys car', Euro: 80, Litre: 0, kWh: 50, km: 200, type_id: 'electric' },
-    { id: 6, text: 'Tims car', Euro: 120, Litre: 0, kWh: 80, km: 250, type_id: 'electric' }
+    { id: 1, text: 'Suzuki Swift', Euro: 200, Litre: 150, kWh: 0, km: 450, type_id: 'petrol' },
+    { id: 2, text: 'BMW x5', Euro: 150, Litre: 100, kWh: 0, km: 300, type_id: 'petrol' },
+    { id: 3, text: 'Peugeot 208', Euro: 250, Litre: 300, kWh: 0, km: 450, type_id: 'petrol' },
+    { id: 4, text: 'Toyota Aygo', Euro: 150, Litre: 200, kWh: 0, km: 600, type_id: 'petrol' },
+    { id: 5, text: 'Polestar 2', Euro: 80, Litre: 0, kWh: 50, km: 200, type_id: 'electric' },
+    { id: 6, text: 'Tesla Model 3', Euro: 120, Litre: 0, kWh: 80, km: 250, type_id: 'electric' }
   ],
   petrolCars: [],
   electricCars: []

@@ -47,9 +47,11 @@ function Tabs() {
           <hr />
           <ul className="list">
             {transactions.map(transaction => (
-              <li key={transaction.transaction}>
-                Car's name: {transaction.text} | €: {transaction.Euro} | Litres: {transaction.Litre} | Driven: {transaction.km}
-              </li>
+              transaction.type_id === 'petrol' && (
+                <li key={transaction.transaction}>
+                  Car's name: {transaction.text} | €: {transaction.Euro} | Litres: {transaction.Litre} | Driven: {transaction.km}
+                </li>
+              )
             ))}
           </ul>
         </div>
@@ -71,9 +73,11 @@ function Tabs() {
           <hr />
           <ul className="list">
             {transactions.map(transaction => (
-              <li key={transaction.transaction}>
-                Car's name: {transaction.text} | €: {transaction.Euro} | kW-hours: {transaction.kWh} | Driven: {transaction.km}
-              </li>
+              transaction.type_id === 'electric' && (
+                <li key={transaction.transaction}>
+                  Car's name: {transaction.text} | €: {transaction.Euro} | kW-hours: {transaction.kWh} | Driven: {transaction.km}
+                </li>
+              )
             ))}
           </ul>
         </div>

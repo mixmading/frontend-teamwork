@@ -38,9 +38,9 @@ export const NewFueling = () => {
 
         <div className="form-control">
           <label htmlFor="text">Car type</label><br />
-          <input type="radio" id="petrol" name="car_type" value="Petrol" checked />
+          <input type="radio" type_id="petrol" name="car_type" value="Petrol" checked />
           <label htmlFor="petrol" style={{ marginRight: '20px' }}>Petrol</label>
-          <input type="radio" id="electric" name="car_type" value="Electric" />
+          <input type="radio" type_id="electric" name="car_type" value="Electric" />
           <label htmlFor="electric">Electric</label>
         </div>
 

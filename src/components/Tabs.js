@@ -17,25 +17,25 @@ function Tabs() {
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
-          Cars 
+          Petrol cars 
         </button>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-          All Cars
+          P-Car summary
         </button>
         <button
           className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(3)}
         >
-          Electric Cars
+          Electric cars
         </button>
         <button
           className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(4)}
         >
-          All E-Cars
+          E-car summary
         </button>
       </div>
 
@@ -43,7 +43,7 @@ function Tabs() {
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <h2>Cars</h2>
+          <h2>Transaction history of petrol cars</h2>
           <hr />
           <ul className="list">
             {transactions.map(transaction => (
@@ -57,17 +57,17 @@ function Tabs() {
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
-          <h2>Cars</h2>
+          <h2>Summary of all petrol car transactions</h2>
           <hr />
           <p>
-            Kakkea
+          Tähän yhteislukemat autojen kulutuksista ja kuluista
           </p>
         </div>
 
         <div
           className={toggleState === 3 ? "content  active-content" : "content"}
         >
-          <h2>Electric Cars</h2>
+          <h2>Transcaction history of Electric Cars</h2>
           <hr />
           <ul className="list">
             {transactions.map(transaction => (
@@ -80,10 +80,10 @@ function Tabs() {
         <div
           className={toggleState === 4 ? "content  active-content" : "content"}
         >
-          <h2>All Electric Cars</h2>
+          <h2>Summary of all electric car transactions</h2>
           <hr />
           <p>
-            Ribals
+            Tähän yhteislukemat sähköautojen kulutuksista ja kuluista
           </p>
         </div>
       </div>

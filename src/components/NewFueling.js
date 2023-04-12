@@ -26,7 +26,7 @@ export const NewFueling = () => {
     }
   return (
     <>
-    <h3>Add new fueling</h3>
+    <h3>Add New Fueling</h3>
     <form onSubmit={onSubmit}>
       <div className="form-control">
         <label htmlFor="text">Car name</label>
@@ -35,29 +35,29 @@ export const NewFueling = () => {
       </div>
 
       <div className="form-control">
-        <label htmlFor="amount-euro">Amount €</label>
+        <label htmlFor="amount-euro">Cost €</label>
         <input type="number" value={Euro} onChange={(e) => setEuro(e.target.value)}
-        placeholder="Enter fueling price in €..." />
+        placeholder="Enter price in €..." />
       </div>
     
       <div className="form-control">
-        <label htmlFor="amount-litre">Amount litre</label>
+        <label htmlFor="amount-litre">Litre amount</label>
         <input type="number" value={Litre} onChange={(e) => setLitre(e.target.value)}
-        placeholder="Enter amount of filled litres..." />
+        placeholder="Enter the amount of fuel in litres..." />
       </div>
 
       <div className="form-control">
         <label htmlFor="amount-kWh">Amount charged</label>
         <input type="number" value={kWh} onChange={(e) => setkWh(e.target.value)}
-        placeholder="Enter chaging amount in kWh ..." />
+        placeholder="Enter charging amount in kWh ..." />
       </div>
 
       <div className="form-control">
-        <label htmlFor="amount-km">Amount drived</label>
+        <label htmlFor="amount-km">Amount driven</label>
         <input type="number" value={km} onChange={(e) => setkm(e.target.value)}
-        placeholder="Enter km amount drived between fueling..." />
+        placeholder="Enter km amount driven between fuelings..." />
       </div>
-      <button className="btn">Add fueling</button>
+      <button className="btn">Submit</button>
     </form>
     </>
     )

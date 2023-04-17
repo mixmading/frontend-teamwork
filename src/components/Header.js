@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import '../scripts/Header.css';
+import HeaderScript from '../scripts/HeaderScript';
 
 export const Header = () => {
   return (
     <h2>
-        Car Fuel Expences
+      <div className="header">
+        <h1>Car Expense Tracker</h1>
+      </div>
+      <div className="content"></div>
+      <HeaderScript />
     </h2>
   )
 }

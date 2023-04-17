@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <h2>
       <div className="header">
-        <h1>Car Expense Tracker</h1>
+        <h1 style={{ fontFamily: 'Times New Roman  ' }}>Car Expense Tracker</h1>
       </div>
       <div className="content"></div>
       <HeaderScript />

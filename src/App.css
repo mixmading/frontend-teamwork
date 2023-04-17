@@ -137,7 +137,7 @@ input[type='number'] {
 }
 
 body {
-  background: linear-gradient(to bottom, #0c33e2, #f700ff);
+  background: linear-gradient(to bottom, #0c33e2ea, #f700ffc2);
 }
 
 .container {

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-
 import { GlobalContext } from '../context/GlobalState';
+import PCarSummary from "./PCarSummary";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -59,11 +59,7 @@ function Tabs() {
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
-          <h2>Summary of all petrol car transactions</h2>
-          <hr />
-          <p>
-          Tähän yhteislukemat autojen kulutuksista ja kuluista
-          </p>
+          <PCarSummary />
         </div>
 
         <div

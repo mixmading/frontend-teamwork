@@ -10,7 +10,7 @@ export const FuelingList = () => {
       <ul className="list">
         {transactions.map(transaction => (
           <li key={transaction.transaction}>
-          Car's name: {transaction.text} | €: {transaction.Euro} | Litres: {transaction.Litre} | kW-hours: {transaction.kWh} | Driven: {transaction.km}
+          Model: <b>{transaction.text}</b> | €: <b>{transaction.Euro}</b> | Litres: <b>{transaction.Litre}</b> | kW-hours: <b>{transaction.kWh}</b> | Driven: <b>{transaction.km}</b>
           </li>
         ))}
       </ul>

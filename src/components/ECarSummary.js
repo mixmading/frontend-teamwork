@@ -17,13 +17,20 @@ function ECarSummary() {
     0
   );
 
+  const kmTotal = electricTransactions.reduce(
+    (acc, transaction) => acc + transaction.km,
+    0
+  );
+
   return (
     <div className="content  active-content">
       <h2>Summary of all e-car transactions</h2>
       <hr />
       <p>Total €: {euroTotal.toFixed(2)} 
       <br></br>
-      Total charged kWh: {kWhTotal.toFixed(2)}</p>
+      Total charged kWh: {kWhTotal.toFixed(2)}
+      <br></br>
+      Total Driven: {kmTotal.toFixed(2)}</p>
     </div>
   );
 }

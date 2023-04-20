@@ -16,14 +16,19 @@ function PCarSummary() {
     (acc, transaction) => acc + transaction.Litre,
     0
   );
-
+  const kmTotal = petrolTransactions.reduce(
+    (acc, transaction) => acc + transaction.km,
+    0
+  );
   return (
     <div className="content  active-content">
       <h2>Summary of all petrol car transactions</h2>
       <hr />
       <p>Total €: {euroTotal.toFixed(2)}
       <br></br>
-      Total litres: {litreTotal.toFixed(2)}</p>
+      Total litres: {litreTotal.toFixed(2)}
+      <br></br>
+      Total driven: {kmTotal.toFixed(2)}</p>
     </div>
   );
 }

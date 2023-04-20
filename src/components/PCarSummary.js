@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
+import FuelConsumption from "./FuelConsumption";
 
 function PCarSummary() {
   const { transactions } = useContext(GlobalContext);
@@ -20,15 +21,17 @@ function PCarSummary() {
     (acc, transaction) => acc + transaction.km,
     0
   );
+
   return (
     <ul className="list">
-    
       <div className="content  active-content">
         <h2>Summary of all petrol car transactions</h2>
         <hr />
         <li>Total Fueling Cost (€): <b>{euroTotal.toFixed(2)}</b></li>
         <li>Total Amount Of Fuel (L): <b>{litreTotal.toFixed(2)}</b></li>
         <li>Total Amount Driven (km): <b>{kmTotal.toFixed(2)}</b></li>
+        <li>Average Price per 100km (€/100km): <b>{FuelConsumption(petrolTransactions).average.toFixed(2)}</b></li>
+        <li>Average Litres per 100km (L/100km): <b>{FuelConsumption(petrolTransactions).litersPer100km.toFixed(2)}</b></li>
       </div>
     </ul>
   );

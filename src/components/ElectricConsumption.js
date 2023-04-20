@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
-function FuelConsumption(props) {
+function ElectricConsumption(props) {
   const { transactions } = useContext(GlobalContext);
 
   // Calculate the total liters of fuel used
-  const litreTotal = props.reduce(
-    (acc, transaction) => acc + transaction.Litre,
+  const kWhTotal = props.reduce(
+    (acc, transaction) => acc + transaction.kWh,
     0
   );
 
@@ -20,15 +20,15 @@ function FuelConsumption(props) {
     0
   );
 
-  const litersPer100km = litreTotal / kmTotal * 100;
-  const average = kmTotal / litreTotal;
+  const kWhPer100km = kWhTotal / kmTotal * 100;
+  const average = kmTotal / kWhTotal;
   const euroPer100km = (euroTotal / kmTotal) * 100;
 
   return {
     average: average,
-    litersPer100km: litersPer100km,
+    kWhPer100km: kWhPer100km,
     euroPer100km: euroPer100km,
   };
 }
 
-export default FuelConsumption;
+export default ElectricConsumption;

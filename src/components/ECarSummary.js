@@ -28,7 +28,7 @@ function ECarSummary() {
       <hr />
       <p>Total Charging Cost (€): <b>{euroTotal.toFixed(2)}</b> 
       <br></br>
-      Total Amount Charged (kW): <b>{kWhTotal.toFixed(2)}</b>
+      Total Amount Charged (kWh): <b>{kWhTotal.toFixed(2)}</b>
       <br></br>
       Total Amount Driven (km): <b>{kmTotal.toFixed(2)}</b></p>
     </div>

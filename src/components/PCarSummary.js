@@ -28,7 +28,7 @@ function PCarSummary() {
       <br></br>
       Total Amount Of Fuel (L): <b>{litreTotal.toFixed(2)}</b>
       <br></br>
-      Total Amount Driven: <b>{kmTotal.toFixed(2)}</b></p>
+      Total Amount Driven: (km) <b>{kmTotal.toFixed(2)}</b></p>
     </div>
   );
 }

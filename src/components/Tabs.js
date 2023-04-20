@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from '../context/GlobalState';
 import PCarSummary from "./PCarSummary";
+import ECarSummary from "./ECarSummary";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -77,18 +78,16 @@ function Tabs() {
             ))}
           </ul>
         </div>
+
         <div
           className={toggleState === 4 ? "content  active-content" : "content"}
         >
-          <h2>Summary of all electric car transactions</h2>
-          <hr />
-          <p>
-            Tähän yhteislukemat sähköautojen kulutuksista ja kuluista
-          </p>
+          <ECarSummary/>
         </div>
       </div>
     </div>
   );
-}
+              };
+
 
 export default Tabs;

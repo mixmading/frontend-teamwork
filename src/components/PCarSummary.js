@@ -21,8 +21,9 @@ function PCarSummary() {
     <div className="content  active-content">
       <h2>Summary of all petrol car transactions</h2>
       <hr />
-      <p>Total €: {euroTotal.toFixed(2)}</p>
-      <p>Total litres: {litreTotal.toFixed(2)}</p>
+      <p>Total €: {euroTotal.toFixed(2)}
+      <br></br>
+      Total litres: {litreTotal.toFixed(2)}</p>
     </div>
   );
 }

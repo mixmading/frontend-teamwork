@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import FuelConsumption from "./FuelConsumption";
-import FuelConsumption from "./FuelConsumption";
 
 function PCarSummary() {
   const { transactions } = useContext(GlobalContext);

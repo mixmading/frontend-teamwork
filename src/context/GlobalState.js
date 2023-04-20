@@ -1,7 +1,7 @@
 import React, { createContext, useReducer, useEffect } from 'react';
 import AppReducer from './AppReducer';
 
-//initial state
+// Initial state
 const initialState = {
   transactions: [
     { id: 1, text: 'Suzuki Swift', Euro: 200, Litre: 150, kWh: 0, km: 450, type_id: 'petrol' },
@@ -30,12 +30,12 @@ export const GlobalProvider = ({ children }) => {
     dispatch({ type: 'SET_ELECTRIC_CARS', payload: electricCars });
   }, [state.transactions]);
 
-  //  Actions
+  // Actions
 
-  function deleteTransaction(transaction) {
+  function deleteTransaction(id) {
     dispatch({
       type: 'DELETE_TRANSACTION',
-      payload: transaction
+      payload: id
     });
   }
 
@@ -46,15 +46,38 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
+  function setTransaction(transactions) {
+    dispatch({
+      type: 'SET_TRANSACTIONS',
+      payload: transactions
+    });
+  }
+
+  function handleTransaction(transaction) {
+    // Save the transaction to the history
+    const newTransactions = [...state.transactions, transaction];
+    window.history.pushState({ transactions: newTransactions }, null, null);
+
+    // Update the state with the new transaction
+    dispatch({
+      type: 'HANDLE_TRANSACTION',
+      payload: transaction
+    });
+  }
+
   return (
-    <GlobalContext.Provider value={{
-      transactions: state.transactions,
-      petrolCars: state.petrolCars,
-      electricCars: state.electricCars,
-      deleteTransaction,
-      addTransaction
-    }}>
+    <GlobalContext.Provider
+      value={{
+        transactions: state.transactions,
+        petrolCars: state.petrolCars,
+        electricCars: state.electricCars,
+        deleteTransaction,
+        addTransaction,
+        setTransaction,
+        handleTransaction
+      }}
+    >
       {children}
     </GlobalContext.Provider>
   );
-}
+};

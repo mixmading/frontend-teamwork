@@ -30,8 +30,8 @@ function PCarSummary() {
         <li>Total Fueling Cost (€): <b>{euroTotal.toFixed(2)}</b></li>
         <li>Total Amount Of Fuel (L): <b>{litreTotal.toFixed(2)}</b></li>
         <li>Total Amount Driven (km): <b>{kmTotal.toFixed(2)}</b></li>
-        <li>Average Price per 100km (€/100km): <b>{FuelConsumption(petrolTransactions).average.toFixed(2)}</b></li>
-        <li>Average Litres per 100km (L/100km): <b>{FuelConsumption(petrolTransactions).litersPer100km.toFixed(2)}</b></li>
+        <li>Average Cost Per 100km (€/100km): <b>{FuelConsumption(petrolTransactions).average.toFixed(2)}</b></li>
+        <li>Average Consumption Per 100km (L/100km): <b>{FuelConsumption(petrolTransactions).litersPer100km.toFixed(2)}</b></li>
       </div>
     </ul>
   );

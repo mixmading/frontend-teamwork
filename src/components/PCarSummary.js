@@ -24,11 +24,11 @@ function PCarSummary() {
     <div className="content  active-content">
       <h2>Summary of all petrol car transactions</h2>
       <hr />
-      <p>Total €: {euroTotal.toFixed(2)}
+      <p>Total Fueling Cost (€): <b>{euroTotal.toFixed(2)}</b>
       <br></br>
-      Total litres: {litreTotal.toFixed(2)}
+      Total Amount Of Fuel (L): <b>{litreTotal.toFixed(2)}</b>
       <br></br>
-      Total driven: {kmTotal.toFixed(2)}</p>
+      Total Amount Driven (km): <b>{kmTotal.toFixed(2)}</b></p>
     </div>
   );
 }

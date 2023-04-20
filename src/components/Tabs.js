@@ -50,7 +50,7 @@ function Tabs() {
             {transactions.map(transaction => (
               transaction.type_id === 'petrol' && (
                 <li key={transaction.transaction}>
-                  Car's name: {transaction.text} | €: {transaction.Euro} | Litres: {transaction.Litre} | Driven: {transaction.km}
+                  Model: <b>{transaction.text}</b> | €: <b>{transaction.Euro}</b> | Litres: <b>{transaction.Litre}</b> | Driven: <b>{transaction.km}</b>
                 </li>
               )
             ))}
@@ -72,7 +72,7 @@ function Tabs() {
             {transactions.map(transaction => (
               transaction.type_id === 'electric' && (
                 <li key={transaction.transaction}>
-                  Car's name: {transaction.text} | €: {transaction.Euro} | kW-hours: {transaction.kWh} | Driven: {transaction.km}
+                  Model:<b>{transaction.text}</b> | €:<b>{transaction.Euro}</b> | kW-hours:<b>{transaction.kWh}</b> | Driven:<b>{transaction.km}</b>
                 </li>
               )
             ))}

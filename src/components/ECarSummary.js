@@ -26,11 +26,11 @@ function ECarSummary() {
     <div className="content  active-content">
       <h2>Summary of all e-car transactions</h2>
       <hr />
-      <p>Total €: {euroTotal.toFixed(2)} 
+      <p>Total Charging Cost (€): <b>{euroTotal.toFixed(2)}</b> 
       <br></br>
-      Total charged kWh: {kWhTotal.toFixed(2)}
+      Total Amount Charged (kWh): <b>{kWhTotal.toFixed(2)}</b>
       <br></br>
-      Total Driven: {kmTotal.toFixed(2)}</p>
+      Total Amount Driven (km): <b>{kmTotal.toFixed(2)}</b></p>
     </div>
   );
 }

@@ -21,15 +21,16 @@ function PCarSummary() {
     0
   );
   return (
-    <div className="content  active-content">
-      <h2>Summary of all petrol car transactions</h2>
-      <hr />
-      <p>Total Fueling Cost (€): <b>{euroTotal.toFixed(2)}</b>
-      <br></br>
-      Total Amount Of Fuel (L): <b>{litreTotal.toFixed(2)}</b>
-      <br></br>
-      Total Amount Driven (km): <b>{kmTotal.toFixed(2)}</b></p>
-    </div>
+    <ul className="list">
+    
+      <div className="content  active-content">
+        <h2>Summary of all petrol car transactions</h2>
+        <hr />
+        <li>Total Fueling Cost (€): <b>{euroTotal.toFixed(2)}</b></li>
+        <li>Total Amount Of Fuel (L): <b>{litreTotal.toFixed(2)}</b></li>
+        <li>Total Amount Driven (km): <b>{kmTotal.toFixed(2)}</b></li>
+      </div>
+    </ul>
   );
 }
 

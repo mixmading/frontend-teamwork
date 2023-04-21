@@ -47,9 +47,9 @@ export const NewFueling = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="text"><b>Car name (max 20 characters)</b></label>
+          <label htmlFor="text"><b>Car model (max 20 characters)</b></label>
           <input type="text" value={text} onChange={(e) => setText(e.target.value.substring(0, 20))}
-            placeholder="Enter car name..." maxLength={20} />
+            placeholder="Enter car model..." maxLength={20} />
         </div>
 
         <div className="form-control">

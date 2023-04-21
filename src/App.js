@@ -18,10 +18,13 @@ function App() {
       <NewFueling />
       <Tabs />
         <SearchBar />
+      
       <FuelingList />
       
       </div>
+      
     </GlobalProvider>
+    
   );
 }
 

@@ -222,3 +222,31 @@ button {
   display: block;
 }
 
+.header {
+  width: 100%;
+  background-color: rgb(71, 7, 248);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 50px;
+  transition: all 0.3s;
+}
+
+.header.shrink {
+  height: 50px;
+}
+
+.header.shrink h1 {
+  font-size: 36px;
+  transition: all 0.3s;
+}

@@ -225,3 +225,27 @@ button {
 .active-content {
   display: block;
 }
+
+
+.comparison-table-container {
+  max-width: 800px;
+  overflow-x: auto;
+}
+
+.comparison-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid black;
+  padding: 8px 4px; /* reduced left/right padding */
+  text-align: center;
+  font-size: 14px; /* reduced font size */
+}
+

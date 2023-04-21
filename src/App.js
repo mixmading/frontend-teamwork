@@ -3,6 +3,7 @@ import './App.css';
 import  Tabs  from './components/Tabs';
 import { Header } from './components/Header';
 import { FuelingList } from './components/FuelingList';
+import  CompareCosts  from './components/CompareCosts';
 import { NewFueling } from './components/NewFueling';
 import SearchBar from './components/Searchbar';
 import { Transactions } from './components/Transaction'
@@ -14,11 +15,11 @@ function App() {
     <GlobalProvider>
       <Header />
       <div className='Container'>
-       
       <NewFueling />
       <Tabs />
         <SearchBar />
-      
+        <br></br>
+      <CompareCosts />
       <FuelingList />
       
       </div>

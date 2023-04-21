@@ -31,8 +31,8 @@ function ECarSummary() {
         <li>Total Charging Cost (€): <b>{euroTotal.toFixed(2)}</b></li>
         <li>Total Amount Charged (kWh): <b>{kWhTotal.toFixed(2)}</b></li>
         <li>Total Amount Driven (km): <b>{kmTotal.toFixed(2)}</b></li>
-        <li>Average Price per 100km (€/100km): <b>{ElectricConsumption(electricTransactions).average.toFixed(2)}</b></li>
-        <li>Average kWh per 100km (kWh/100km): <b>{ElectricConsumption(electricTransactions).kWhPer100km.toFixed(2)}</b></li>
+        <li>Average Cost Per 100km (€/100km): <b>{ElectricConsumption(electricTransactions).average.toFixed(2)}</b></li>
+        <li>Average Consumption Per 100km (kWh/100km): <b>{ElectricConsumption(electricTransactions).kWhPer100km.toFixed(2)}</b></li>
       </div>
     </ul>
   );

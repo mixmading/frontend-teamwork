@@ -21,7 +21,7 @@ function CompareCosts() {
 
   return (
     <>
-        <h2>Comparison of costs and consumption</h2>
+        <h3>Comparison of costs and consumption</h3>
         <ul className="list">
             {[      { label: "Cost per 100km for petrol:", value: petrolEuroPer100km.toFixed(2), marker: "€" },      { label: "Cost per 100km for electric:", value: electricEuroPer100km.toFixed(2), marker: "€" },    { label: "Consumption per 100km for petrol:", value: petrolLitersPer100km.toFixed(2), marker: "L" },      { label: "Consumption per 100km for electric:", value: electricKWhPer100km.toFixed(2), marker: "kWh" },    ].map((data, index) => (
                 <li key={index}>

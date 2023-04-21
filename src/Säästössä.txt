@@ -118,13 +118,4 @@ button {
 
 
 
-
-20.4.23
- z-index: 1000;
-    height: 200px;
-    overflow: hidden;
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    transition: height 0.3s;
-    text-align:center;
-    line-height:180px;
+import HeaderScript from '../HeaderScript';

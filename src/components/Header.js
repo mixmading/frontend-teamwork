@@ -7,9 +7,10 @@ export const Header = () => {
     <h2>
       <div className="header">
         <h1 style={{ fontFamily: 'Times New Roman  ' }}>Car Expense Tracker</h1>
-      </div>
+    </div>
       <div className="content"></div>
       <HeaderScript />
+     
     </h2>
   )
 }

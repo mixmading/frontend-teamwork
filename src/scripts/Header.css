@@ -1,4 +1,4 @@
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,4 +38,10 @@
 .content
 {
 height:2000px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
 }

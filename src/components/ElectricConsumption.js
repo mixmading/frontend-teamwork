@@ -4,7 +4,6 @@ import { GlobalContext } from "../context/GlobalState";
 function ElectricConsumption(props) {
   const { transactions } = useContext(GlobalContext);
 
-  // Calculate the total liters of fuel used
   const kWhTotal = props.reduce(
     (acc, transaction) => acc + transaction.kWh,
     0

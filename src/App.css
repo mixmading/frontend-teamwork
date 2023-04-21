@@ -30,14 +30,16 @@ h1 {
 }
 
 h3 {
-  border-bottom: 1px solid rgb(84, 23, 228);
+  border-bottom: 1px solid #f700ff9f;
   padding-bottom: 10px;
   margin: 40px 0 10px;
+  color:#fff;
 }
 
 h4 {
   margin: 0;
   text-transform: uppercase;
+  color: rgb(255, 255, 255);
 }
 
 .inc-exp-container {
@@ -62,6 +64,8 @@ h4 {
 label {
   display: inline-block;
   margin: 10px 0;
+  color: #ffffff;
+
 }
 
 input[type='text'],
@@ -137,7 +141,7 @@ input[type='number'] {
 }
 
 body {
-  background: linear-gradient(to bottom, #0c33e2c9, #f700ff9f);
+  background: linear-gradient(to bottom, rgb(71, 7, 248), #f700ff9f);
 }
 
 .container {
@@ -198,7 +202,7 @@ button {
   flex-grow : 1;
 }
 .content {
-  background: rgba(255, 255, 255, 0);
+  background: rgb(255, 255, 255);
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -220,33 +224,4 @@ button {
 }
 .active-content {
   display: block;
-}
-
-.header {
-  width: 100%;
-  background-color: rgb(71, 7, 248);
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.header h1 {
-  font-size: 40px;
-  font-weight: normal;
-  margin: 0;
-  line-height: 50px;
-  transition: all 0.3s;
-}
-
-.header.shrink {
-  height: 50px;
-}
-
-.header.shrink h1 {
-  font-size: 36px;
-  transition: all 0.3s;
 }

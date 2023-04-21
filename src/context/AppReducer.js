@@ -1,7 +1,7 @@
 export const ADD_TRANSACTION = 'ADD_TRANSACTION';
 export const DELETE_TRANSACTION = 'DELETE_TRANSACTION';
 
-export default (state, action) => {
+const AppReducer = (state, action) => {
   switch (action.type) {
     case DELETE_TRANSACTION:
       return {
@@ -17,3 +17,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default AppReducer;

@@ -4,13 +4,11 @@ import { GlobalContext } from "../context/GlobalState";
 function FuelConsumption(props) {
   const { transactions } = useContext(GlobalContext);
 
-  // Calculate the total liters of fuel used
   const litreTotal = props.reduce(
     (acc, transaction) => acc + transaction.Litre,
     0
   );
 
-  
   const euroTotal = transactions.reduce(
     (acc, transaction) => acc + transaction.Euro,
     0

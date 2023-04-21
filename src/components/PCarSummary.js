@@ -5,7 +5,6 @@ import FuelConsumption from "./FuelConsumption";
 function PCarSummary() {
   const { transactions } = useContext(GlobalContext);
 
-  // Calculate the summary of all petrol car transactions
   const petrolTransactions = transactions.filter(
     (transaction) => transaction.type_id === "petrol"
   );

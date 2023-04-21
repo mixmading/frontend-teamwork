@@ -4,7 +4,8 @@ import  Tabs  from './components/Tabs';
 import { Header } from './components/Header';
 import { FuelingList } from './components/FuelingList';
 import { NewFueling } from './components/NewFueling';
-
+import SearchBar from './components/Searchbar';
+import { Transactions } from './components/Transaction'
 import { GlobalProvider } from './context/GlobalState';
 
 function App() {
@@ -13,20 +14,12 @@ function App() {
     <GlobalProvider>
       <Header />
       <div className='Container'>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+       
       <NewFueling />
       <Tabs />
+        <SearchBar />
       <FuelingList />
       
-
       </div>
     </GlobalProvider>
   );

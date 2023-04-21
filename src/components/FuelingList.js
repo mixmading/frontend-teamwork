@@ -11,7 +11,7 @@ export const FuelingList = () => {
       }
     };
 
-    // Listen for the popstate event
+  
     window.addEventListener('popstate', handlePopstate);
 
     return () => {
@@ -20,11 +20,10 @@ export const FuelingList = () => {
   }, [setTransaction]);
 
   const handleTransaction = (transaction) => {
-    // Save the transaction to the history
+
     const newTransactions = [...transactions, transaction];
     window.history.pushState({ transactions: newTransactions }, null, null);
 
-    // Update the state with the new transaction
     setTransaction(newTransactions);
   };
 

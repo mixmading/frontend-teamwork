@@ -11,6 +11,7 @@ const initialState = {
     { id: 5, text: 'Polestar 2', Euro: 80, Litre: 0, kWh: 50, km: 200, type_id: 'electric' },
     { id: 6, text: 'Tesla Model 3', Euro: 120, Litre: 0, kWh: 80, km: 250, type_id: 'electric' }
   ],
+  
   petrolCars: [],
   electricCars: []
 }

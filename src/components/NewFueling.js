@@ -25,7 +25,7 @@ export const NewFueling = () => {
     }
 
     addTransaction(newTransaction);
-    // Clear input fields
+    
     setText('');
     setEuro('');
     setLitre('');
@@ -41,9 +41,9 @@ export const NewFueling = () => {
         <div className="form-control">
           <label htmlFor="text"><strong>Car type</strong></label><br />
           <input type="radio" name="car_type" value="petrol" checked={carType === 'petrol'} onChange={(e) => setCarType(e.target.value)} />
-          <label htmlFor="petrol" style={{ marginRight: '20px' }}>Petrol</label>
+          <label htmlFor="petrol" style={{ marginRight: '20px', marginLeft: '10px'}}>Petrol</label>
           <input type="radio" name="car_type" value="electric" checked={carType === 'electric'} onChange={(e) => setCarType(e.target.value)} />
-          <label htmlFor="electric">Electric</label>
+          <label htmlFor="electric" style={{ marginRight: '20px', marginLeft: '10px'}}>Electric</label>
         </div>
 
         <div className="form-control">

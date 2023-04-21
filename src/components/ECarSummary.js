@@ -5,7 +5,7 @@ import ElectricConsumption from "./ElectricConsumption";
 function ECarSummary() {
   const { transactions } = useContext(GlobalContext);
 
-  // Calculate the summary of all petrol car transactions
+
   const electricTransactions = transactions.filter(
     (transaction) => transaction.type_id === "electric"
   );
